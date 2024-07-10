@@ -1,0 +1,344 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+/* css reset */
+/* Reset CSS */
+
+body, h1, h2, h3, p, ul, ol, li, figure, figcaption, blockquote, dl, dd {
+  margin: 0;
+  padding: 0;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button, input, select, textarea {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+:focus {
+  outline: 1px solid #007BFF;
+}
+
+/* Optional: Set max-width for container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Optional: Add box-sizing */
+* {
+  box-sizing: border-box;
+}
+
+
+:root {
+  --red-color: #f81745;
+  --black-color: #212121;
+  --black2-color: #3f3f3f;
+  --pink-color: #fa80ab;
+  --white-color: #ffffff;
+}
+
+#neubar {
+  background: #ffffff;
+  box-shadow: 4px 6px 12px rgba(102, 102, 102, 0.4);
+}
+
+#neubar .dropdown-menu a:hover {
+  color: #454545;
+}
+#neubar .nav-item {
+  margin: auto 4px;
+}
+#neubar a {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+#neubar .dropdown-menu {
+  background: #545454;
+}
+
+a.navbar-brand {
+  color: var(--pink-color);
+  font-size: 25px;
+  font-weight: bolder;
+}
+
+/* Herro section */
+
+.hero {
+  height: 100vh;
+}
+
+.header {
+  width: 300px;
+}
+
+.header p {
+  font-size: 30px;
+}
+
+.beda {
+  color: #fa80ab;
+}
+
+.name {
+  font-size: 40px;
+  font-weight: bolder;
+}
+
+
+
+.web {
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+.sosmed {
+  background-color: #f81745 !important;
+}
+
+.sosmed:hover {
+  box-shadow: #fa80ab 4px 4px 4px 4px;
+}
+
+.box-sosmed {
+  border-bottom: solid 2px #f81745;
+  height: auto;
+  padding-bottom: 15px;
+  margin-top: 150px;
+}
+
+.image-container {
+  position: relative;
+  text-align: center;
+  margin-top: 250px;
+  margin-left: 100px;
+}
+
+.kotak {
+  width: 100%; /* Sesuaikan ukuran kotak sesuai kebutuhan */
+  height: 150px;
+  background-color: #f81745; /* Ganti warna sesuai kebutuhan */
+  position: absolute;
+  top: 32%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 100px 10px 100px 0;
+}
+
+.centered-image {
+  display: block;
+  margin: auto;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.text-col,
+.image-col,
+.box-sosmed {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.text-col.show,
+.image-col.show,
+.box-sosmed.show {
+  opacity: 1;
+}
+
+.slide-in-left {
+  transform: translateX(-100%);
+}
+
+.slide-in-right {
+  transform: translateX(100%);
+}
+
+/* Tambahkan animasi untuk muncul dari kiri dan kanan */
+.text-col.slide-in-left.show,
+.image-col.slide-in-right.show {
+  transform: translateX(0);
+}
+
+
+.text-col,
+.image-col,
+.box-sosmed {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.text-col.show,
+.image-col.show,
+.box-sosmed.show {
+  opacity: 1;
+}
+
+.slide-in-left {
+  transform: translateX(-100%);
+}
+
+.slide-in-right {
+  transform: translateX(100%);
+}
+
+/* Tambahkan animasi untuk muncul dari kiri dan kanan */
+.text-col.slide-in-left.show {
+  animation: fadeIn 1s ease-in-out, slideInLeft 1s ease-in-out;
+}
+
+.image-col.slide-in-right.show {
+  animation: fadeIn 1s ease-in-out, slideInRight 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+/* Projek */
+.wow,
+.animated {
+    animation-duration: 2s !important;
+}
+
+/*** Spinner End ***/
+
+.back-to-top {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    display: flex;
+    width: 50px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+    z-index: 99;
+}
+
+.back-to-top:hover {
+    background: var(--bs-dark);
+    color: var(--bs-primary);
+}
+
+h1, h2, h3, .h1, .h2, .h3 {
+    font-weight: 700 !important;
+    font-family: 'Open', sans-serif !important;
+}
+
+h4, h5, h6, .h4, .h5, .h6 {
+    font-weight: 600 !important;
+    font-family: 'Open', sans-serif !important;
+}
+
+.py-6 {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+
+/*** Events Start ***/
+.text-span{
+    color: var(--pink-color);
+}
+.event-item img {
+    transition: 0.5s;
+
+}
+
+.event .event-item a {
+    transition: 0.5s;
+}
+
+.event-item:hover img {
+    transition: 0.5s;
+    transform: scale(1.2)
+}
+
+.event-item a:hover {
+    /* background: var(--bs-dark);
+    color: var(--bs-primary); */
+    opacity: 0.5s;
+}
+
+.imgprojek{
+  border-radius: 10px;
+}
+
+
+
+
+
+
+/* CSS untuk tampilan mobile */
+@media (max-width: 767px) {
+  .header p {
+    font-size: 30px;
+  }
+
+  .name {
+    font-size: 40px;
+  }
+
+  .web {
+    font-size: 20px;
+  }
+
+  .box-sosmed {
+    margin-top: 10px;
+  }
+
+  .sosmed {
+    margin-right: 10px;
+  }
+
+  .image-container {
+    margin-top: 180px;
+    margin-left: 0;
+  }
+
+  .kotak {
+    height: 100px;
+    top: 50%;
+  }
+}
