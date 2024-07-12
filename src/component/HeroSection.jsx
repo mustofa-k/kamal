@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagram, faWhatsapp, faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import imgkamal from "../assets/Kamal.png";
+import imgkamal from "../assets/kamal.png";
 // Sesuaikan dengan nama file CSS yang Anda buat
 
 function Hero() {
