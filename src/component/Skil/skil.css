@@ -1,0 +1,113 @@
+/* Warna latar belakang dengan gradasi */
+.skill-section {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  padding: 60px 0;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Warna teks dengan efek gradient */
+.text-span {
+  color: #dc3545; /* Warna danger (merah) */
+  display: inline-block;
+  animation: slide-in 1s ease-out;
+}
+
+@keyframes slide-in {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.skil .skill-item {
+  transition: transform 0.3s ease-in-out;
+  animation: fade-in 0.5s ease-in-out;
+  margin: 20px 0;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Efek zoom dan bayangan saat hover */
+.skil .skill-item:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Warna ikon */
+.react-icon {
+  color: #61dafb; /* React */
+}
+
+.bootstrap-icon {
+  color: #7952b3; /* Bootstrap */
+}
+
+.tailwind-icon {
+  color: #38b2ac; /* Tailwind CSS */
+}
+
+.nextjs-icon {
+  color: #000000; /* Next.js */
+  font-size: 5em; /* Menyamakan ukuran dengan ikon lainnya */
+}
+
+.express-icon {
+  color: #68a063; /* Express.js */
+}
+
+.phpmyadmin-icon {
+  color: #4f5b93; /* phpMyAdmin */
+}
+
+/* Nama skill dengan warna dan font yang menarik */
+.skil p.skill-name {
+  margin-top: 10px;
+  font-size: 1.2em;
+  color: #343a40;
+  font-weight: bold;
+  background: -webkit-linear-gradient(45deg, #007bff, #00c6ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Kotak skill dengan latar belakang berwarna dan padding */
+.skill-box {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  transition: background-color 0.3s ease-in-out;
+  animation: bounce-in 0.6s ease-in-out;
+}
+
+@keyframes bounce-in {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Efek perubahan warna latar belakang saat hover */
+.skill-box:hover {
+  background-color: #f1f1f1;
+}
